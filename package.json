@@ -1,0 +1,33 @@
+{
+  "name": "react-state",
+  "version": "1.0.0",
+  "description": "Создайте компонент AnimationText, который через props text принимает строку и возвращает элемент, который визуализирует данную строку.\r Компонент перерисовывает строку text каждую секунду с разным размером шрифта (CSS свойство: font-size).\r Размер шрифта должен быть в пределах от 10 до 20 px.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splean101/React-State.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/splean101/React-State/issues"
+  },
+  "homepage": "https://github.com/splean101/React-State#readme",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
