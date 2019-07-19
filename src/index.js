@@ -5,12 +5,10 @@ class AnimationText extends React.Component {
     constructor(props) {
         super(props);
         this.state = { text: this.props.text, fontSize: 10 };
-        for(let i = this.state.fontSize; i < 20; i++){
-            setTimeout(() => this.setState({fontSize: i}), 1000)
-        }
+        setInterval(() => this.setState({ fontSize: Math.random() * 10 + 10 }), 1000);
     }
     render() {
-        return <h1 style={this.state}>{this.state.text}</h1>
+        return <h1 style={this.state}>{this.props.text}</h1>
     }
 };
 
